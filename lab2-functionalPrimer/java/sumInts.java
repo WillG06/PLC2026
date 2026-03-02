@@ -11,21 +11,18 @@ interface testSum
 }
 class sumInts {
 	
-  	void applyFunc(testSum fun, int maxInt)
-    {
+  	void applyFunc(testSum fun, int maxInt){
       fun.set(maxInt);
     }
 	
-  	void sumfunc(int maxInt)
-    {
+  	void sumfunc(int maxInt){
       int total = 0;
       for (int i = 0; i <= maxInt; i++)
         total += i;
       System.out.println("Total-> " + total);
     }
 	
- 	void avgfunc(int maxInt)
-  	{
+ 	void avgfunc(int maxInt){
     	int total = 0;
       	for (int i = 0; i <= maxInt; i++)
         	total += i;
@@ -33,8 +30,7 @@ class sumInts {
      	System.out.println("Average-> " + avg);
   	}    
 	
-	public static void main(String[] args)
-	{
+	public static void main(String[] args){
 		char selection = 'a';
       	sumInts L=new sumInts();      	
       	if (selection=='s'){
